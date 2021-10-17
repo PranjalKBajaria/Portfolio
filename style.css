@@ -7,20 +7,62 @@
     text-decoration: none;
 }
 
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #4a69bd;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
 /* Navigation Styles */
 
-.navbar{
+.navbarz{
     position: fixed;
     width: 100%;
+    z-index: 999;
     /* background: #1dd1a1; */
     font-family: 'Roboto', sans-serif;
     padding: 30px 0;
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
+.navbarz.sticky{
     padding: 15px 0;
-    background: #2797b9;
+    background: #4a69bd;
 }
 
 .max-width{
@@ -30,56 +72,60 @@
 }
 
 
-.navbar .max-width{
+.navbarz .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo a{
+.navbarz .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 700;
 }
 
-.navbar .navigation{
+.navbarz .navigation{
     margin: 10px 10%;
 }
 
-.navbar .navigation li{
+.navbarz .navigation li{
     list-style: none;
     display: inline-block;
 }
 
-.navbar .navigation li a{
+.navbarz .navigation li a{
+    text-decoration: none;
     color: rgb(200, 200, 200);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 45px;
+    margin-left: 35px;
     transition: color 0.3s ease-in;
 }
 
-.navbar.sticky .navigation li a{
+.navbarz.sticky .navigation li a{
+    text-decoration: none;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 45px;
+    margin-left: 35px;
     transition: color 0.3s ease-in;
 }
 
-.navbar.sticky .navigation li a:hover{
+.navbarz.sticky .navigation li a:hover{
+    text-decoration: none;
     color: rgb(200, 200, 200);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 
-.navbar .navigation li a:hover{
+.navbarz .navigation li a:hover{
+    text-decoration: none;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 45px;
+    margin-left: 35px;
     text-shadow: 0.1px 0.1px white;
 }
 
@@ -95,7 +141,7 @@
 
 .home{
     display: flex;
-    background: linear-gradient(45deg,#7dd0f6, hsla(143, 100%, 74%, 0.637));
+    background: linear-gradient(45deg,#7dd0f6, #4a69bd);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -141,6 +187,7 @@ section{
 
 .about{
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(236, 236, 236);
 }
 
 .about .title{
@@ -155,7 +202,7 @@ section{
 .about .title::before{
     content: "";
     position: absolute;
-    bottom: -190px;
+    bottom: 0px;
     left: 50%;
     width: 180px;
     height: 3px;
@@ -202,6 +249,132 @@ section{
     line-height: 1.5;
 }
 
+.container .card-title{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container .card-title a:link{
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+}
+
+container .card-title a:hover,:visited{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(141, 141, 141);
+}
+
+/* *************************************** */
+
+.services, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: #4a69bd;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #4a69bd;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* *************************************** */
+.teams .title::after{
+    content: "who with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: #4a69bd;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #4a69bd;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(49, 0, 128)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #4a69bd!important;
+}
+
 
 /* Responsive queries */
 
@@ -219,7 +392,7 @@ section{
         content: "\f00d";
     }
 
-    .navbar .navigation{
+    .navbarz .navigation{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -232,15 +405,15 @@ section{
         transition: all 0.3s ease;
     }
 
-    .navbar .navigation.active{
+    .navbarz .navigation.active{
         left: 0;
     }
 
-    .navbar .navigation li{
+    .navbarz .navigation li{
         display: block;
     }
 
-    .navbar .navigation li a{
+    .navbarz .navigation li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 18px;
