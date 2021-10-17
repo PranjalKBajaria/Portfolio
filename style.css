@@ -98,7 +98,7 @@ section .title::after{
     color: rgb(200, 200, 200);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 30px;
     transition: color 0.3s ease-in;
 }
 
@@ -107,7 +107,7 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 30px;
     transition: color 0.3s ease-in;
 }
 
@@ -116,7 +116,7 @@ section .title::after{
     color: rgb(200, 200, 200);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 
@@ -125,7 +125,7 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 30px;
     text-shadow: 0.1px 0.1px white;
 }
 
@@ -275,11 +275,11 @@ container .card-title a:hover,:visited{
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+/* .services .title::after,
 .teams .title::after{
     background: #111;
     content: "what i provide";
-}
+} */
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -312,10 +312,9 @@ container .card-title a:hover,:visited{
     margin: 10px 0 7px 0;
 }
 
+
 /* *************************************** */
-.teams .title::after{
-    content: "who with me";
-}
+
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
