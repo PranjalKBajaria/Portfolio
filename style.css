@@ -202,11 +202,11 @@ section{
 .about .title::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #2797b9;
+    background: #4a69bd;
     transform: translateX( -50%);
 }
 
@@ -265,6 +265,8 @@ container .card-title a:hover,:visited{
     color: rgb(141, 141, 141);
 }
 
+
+
 /* *************************************** */
 
 .services, .teams{
@@ -280,7 +282,7 @@ container .card-title a:hover,:visited{
     background: #111;
     content: "what i provide";
 } */
-.services .serv-content .card{
+/* .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -310,7 +312,7 @@ container .card-title a:hover,:visited{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+} */
 
 
 /* *************************************** */
@@ -373,6 +375,42 @@ container .card-title a:hover,:visited{
 .owl-dot:hover{
     background: #4a69bd!important;
 }
+
+footer{
+    background-color: #4a69bd;
+    height: 200px;
+}
+
+footer .max-width{
+    text-decoration: none;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .max-width .left{
+    /* float: left; */
+    /* width: 20%; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer .max-width .right{
+    /* float: rigßht; */
+    /* width: 30%; */
+    margin-top: 20px;
+    font-size: 250%;
+    margin-left: auto; 
+    margin-right: 0;
+    /* padding-left: 50%; */
+}
+
+footer .max-width .right .social-links a{
+    padding-left: 20px;
+}
+
 
 
 /* Responsive queries */

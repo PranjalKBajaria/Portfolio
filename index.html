@@ -7,6 +7,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -105,29 +106,108 @@
 
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title">My Experience</h2>
             <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                <section class="container">
+
+                    <!-- Page Heading -->
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style="background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+                          <div class="card-body" style="padding: 0.8em 1em;" >
+                            <h4 class="card-title">
+                              <a href="https://github.com/PranjalKBajaria/CSC207-Final-Project" target="_blank">Conference Client</a>
+                            </h4>
+                            <p class="card-text"> This project was completed in a group of 7 students as 
+                                the final project for CSC207: Software Design. We made 
+                                a conference client in Java with an interactive Java Swing GUI using best 
+                                practices like SOLID architecture and various design patterns like the
+                                MVP, Factory, Builder and Facade design patterns. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style=" background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              <a href="https://github.com/PranjalKBajaria/NSTcnn" target="_blank">Musical Neural Style Converter</a>
+                            </h4>
+                            <p class="card-text">Led a team of 5 developers in creating a software program
+                                that uses a deep learing model to transfer the "style" of an input song to 
+                                that of the target song using Python’s librosa and Tensorflow libraries. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style=" background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              <a href="#">DoodleJump Game (Assembly)</a>
+                            </h4>
+                            <p class="card-text">Made a scaled down version of the popular doodle jump game 
+                                in Assembly langage on MARS MIPS emulator. This project was the final project
+                                for CSC258: Computer Organisation. I didn't stop at just completing the requirements 
+                                and added better graphics witha wallpaper, enemies and improved game physics.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style=" background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="knn.png" alt="" style="object-fit: cover;"></a>
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              <a href="https://youtu.be/odV3d0b8-zU">Moods Journal</a>
+                            </h4>
+                            <p class="card-text">
+                                Moods is a Journal app that uses sentiment analysis to detect mood levels of the
+                                user and makes it easier for them to keep track of their mental health. The app also 
+                                displays useful statistics that help users identify what factors affected their mental
+                                health the most over time (positively and negatively). The front end was implemented 
+                                using flutter and the backend was implemented using Python.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style=" background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="cucai.jpeg" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              <a href="#">Machine Learning Algos in C</a>
+                            </h4>
+                            <p class="card-text">As assigments for the course CSC209: Software tools and systems programming
+                                I implemented KNNs and Decision Trees in C; used the concepts of pipes and processes to
+                                speed up the timimg of the algorithms and get better results.<br>
+                                Note: I was provided starter code by the course instructor, but the important parts like classification
+                                and forking were implemented by me. Access to github repo can be provided if needed.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="card h-100" style=" background-color: #222;">
+                          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title">
+                              <a href="https://github.com/PranjalKBajaria/snakeGameJS" target="_blank"> Snake Game</a>
+                            </h4>
+                            <p class="card-text"> Worked on making the classic snake game in javascript to
+                                get experience in working with the laguage and practicing my new HTMl and CSS
+                                skills. The game is actually very fun to play at a high speed setting and has 
+                                a custom 8-bit background song.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
+                    <!-- /.row -->
+                  
+                  
+                </section>
                </div>
             </div>
         </div>
@@ -252,36 +332,95 @@
                 <div class="card">
                     <div class="box">
                         <img src="uoft.png" alt="">
-                        <div class="text"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">UofT Student Engagement Award</div>
+                        <p> The UofT Student Engagement Awards are awarded to student-led projects 
+                            that contribute to rebuilding healthy, resilient, and equitable 
+                            communities as part of our post-COVID recovery</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="uc.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Reuben Wells Leonard Scholarship</div>
+                        <p>Awarded to one student in every year who maintain excellent academic standing
+                            in Univeristy College, UofT.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="uc.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Louis Rosenfeld Scholarship</div>
+                        <p>Awarded to a student who maintains general proficiency with excellent ecademic 
+                            standing throughout their undergrad in University College, UofT.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box" style="text-align: center;">
+                        <img src="coursera.svg" alt="">
+                        <div class="text">Machine Learning</div>
+                        <p>Offered by Stanford University
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="uc.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="coursera.svg" alt="">
+                        <div class="text">Data Analysis With Python</div>
+                        <p>Offered by IBM</p>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="coursera.svg" alt="">
+                        <div class="text">Databases and SQL for Data Science with Python</div>
+                        <p>Offered by IBM
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="coursera.svg" alt="">
+                        <div class="text">Python for Data Science, AI and Development</div>
+                        <p> Offered by IBM</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="udemy.png" alt="">
+                        <div class="text">Java Masterclass</div>
+                        <p></p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-
+    <footer>
+        <div class="max-width" >
+            <div class="left">
+                 Get in touch
+            </div> 
+            <div class="right">
+                <ul class="social-links">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-file"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-paper-plane"></i></a>
+                </ul>
+            </div>
+        </div>
+        <div class="max-width" style="text-align: centre;">
+            <p>
+                Copyright &copy; 2021 Pranjal Kumar Bajaria.
+            </p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
