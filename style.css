@@ -137,6 +137,10 @@ section .title::after{
     display: none;
 }
 
+.navigation .menu-btn{
+    display: inline-block;
+}
+
 /* HOME STYLING */
 
 .home{
