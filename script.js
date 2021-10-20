@@ -7,10 +7,19 @@ $(document).ready(function(){
         }
     })
 
+    // $('.menu-btn').click(function(){
+    //     $('.navbarz .navigation').toggleClass("active");
+    //     $('.menu-btn i').toggleClass("active");
+    // })
+
+    $('.navbarz .navigation li a').click(function(){
+        $('html').css("scrollBehavior", "smooth");
+    });
+
     $('.menu-btn').click(function(){
         $('.navbarz .navigation').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    })
+    });
 
 
     // owl carousel script
