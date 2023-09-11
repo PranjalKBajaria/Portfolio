@@ -7,11 +7,6 @@ $(document).ready(function(){
         }
     })
 
-    // $('.menu-btn').click(function(){
-    //     $('.navbarz .navigation').toggleClass("active");
-    //     $('.menu-btn i').toggleClass("active");
-    // })
-
     $('.navbarz .navigation li a').click(function(){
         $('html').css("scrollBehavior", "smooth");
     });
@@ -47,3 +42,7 @@ $(document).ready(function(){
     
 }
 )
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
