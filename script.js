@@ -102,60 +102,64 @@ $('#sportsup').click(function(){
     content.style.display = "flex";
 });
 
-$('#csc207').click(function(){
+$('#outlook').click(function(){
     // Get the modal
     var modal = document.getElementById("myModal");
-    var content = document.getElementById("modal-csc207")
+    var content = document.getElementById("modal-outlook")
 
     // When the user clicks on the button, open the modal
     modal.style.display = "block";
     content.style.display = "flex";
 });
 
-$('#csc207').click(function(){
+$('#moods').click(function(){
     // Get the modal
     var modal = document.getElementById("myModal");
-    var content = document.getElementById("modal-csc207")
+    var content = document.getElementById("modal-moods")
 
     // When the user clicks on the button, open the modal
     modal.style.display = "block";
     content.style.display = "flex";
 });
 
-$('#csc207').click(function(){
+$('#nstcnn').click(function(){
     // Get the modal
     var modal = document.getElementById("myModal");
-    var content = document.getElementById("modal-csc207")
+    var content = document.getElementById("modal-nstcnn")
 
     // When the user clicks on the button, open the modal
     modal.style.display = "block";
     content.style.display = "flex";
 });
 
-$('#csc207').click(function(){
+$('#assemblygame').click(function(){
     // Get the modal
     var modal = document.getElementById("myModal");
-    var content = document.getElementById("modal-csc207")
+    var content = document.getElementById("modal-assemblygame")
 
     // When the user clicks on the button, open the modal
     modal.style.display = "block";
     content.style.display = "flex";
 });
 
-$('#csc207').click(function(){
+$('#recamovie').click(function(){
     // Get the modal
     var modal = document.getElementById("myModal");
-    var content = document.getElementById("modal-csc207")
+    var content = document.getElementById("modal-recamovie")
 
     // When the user clicks on the button, open the modal
     modal.style.display = "block";
     content.style.display = "flex";
 });
 
-$('.close').click(function(){
-    // Get the modal
+$('.close').click(function(e){
+    e.preventDefault();
+    //  get the modal
     var modal = document.getElementById("myModal");
+    const modalId = e.target.id.split('-')[1];
+    var content = document.getElementById(`modal-${modalId}`)
 
     // When the user clicks on the button, open the modal
     modal.style.display = "none";
+    content.style.display = "none";
 })

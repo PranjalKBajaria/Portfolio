@@ -92,6 +92,8 @@ section .title::after{
 .navbarz .navigation li{
     list-style: none;
     display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .navbarz .navigation li a{
@@ -99,7 +101,6 @@ section .title::after{
     color: rgb(185, 184, 184);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 30px;
     transition: color 0.3s ease-in;
 }
 
@@ -108,7 +109,6 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 30px;
     transition: color 0.3s ease-in;
 }
 
@@ -117,7 +117,6 @@ section .title::after{
     color: rgb(200, 200, 200);
     font-size: 18px;
     font-weight: 700;
-    margin-left: 30px;
 }
 
 
@@ -126,7 +125,6 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 30px;
     text-shadow: 0.1px 0.1px white;
 }
 
@@ -320,6 +318,10 @@ section{
     line-height: 1.5;
 }
 
+.about .about-content .right ul li {
+    margin-top: 5px;
+}
+
 .exp-container {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -442,6 +444,12 @@ section{
 }
 
 @media (min-width: 992px){
+
+    .navbarz .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
 
     .col-lg-8 {
         flex: 0 0 66.66666667%;
@@ -653,7 +661,7 @@ footer .max-width p{
 }
 
 #recamovie:before{
-    background-image: url('csc413.png');
+    background-image: url('recamovie.png');
     padding: 50px;
 }
 
@@ -760,10 +768,46 @@ footer .max-width p{
     display: none;
     width: 50%!important;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     min-width: 350px!important;
+  }
+
+  #modal-csc207{
+    display: none;
+  }
+
+  #modal-csc413{
+    display: none;
+  }
+
+  #modal-recamovie{
+    display: none;
+  }
+
+  #modal-footy{
+    display: none;
+  }
+
+  #modal-sportsup{
+    display: none;
+  }
+
+  #modal-outlook{
+    display: none;
+  }
+
+  #modal-nstcnn{
+    display: none;
+  }
+
+  #modal-moods{
+    display: none;
+  }
+
+  #modal-assemblygame{
+    display: none;
   }
 
   .modal-footer {
@@ -801,7 +845,13 @@ footer .max-width p{
 
 /* Responsive queries */
 
-@media(max-width: 1120px){
+@media(max-width: 1190px){
+    .navbarz .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
     .max-width{
         padding: 0 30px;
     }
@@ -813,8 +863,6 @@ footer .max-width p{
     .menu-btn{
         display: block;
         z-index: 999;
-    }
-    #projects .row{
     }
 
     .menu-btn i.active::before{
@@ -868,6 +916,12 @@ footer .max-width p{
 }
 
 @media(max-width: 980px){
+    .navbarz .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
     .about .about-content .column{
         width: 100%;
     }
