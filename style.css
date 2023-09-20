@@ -535,7 +535,7 @@ section{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(49, 0, 128)!important;
+    border: 2px solid rgb(0, 0, 0)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
