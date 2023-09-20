@@ -16,7 +16,6 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -43,6 +42,120 @@ $(document).ready(function(){
 }
 )
 
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
+$('#projects-show-more-btn').click(function(){
+    const showProjects = document.querySelector('#projects-show-more');
+    const showMorebtn = document.querySelector('#projects-show-more-btn');
+    const showLessbtn = document.querySelector('#projects-show-less-btn');
+    showProjects.style.height = 'auto';
+    showMorebtn.style.display = 'none';
+    showLessbtn.style.display = 'inline-block';
+});
+
+$('#projects-show-less-btn').click(function(){
+    const showProjects = document.querySelector('#projects-show-more');
+    const showMorebtn = document.querySelector('#projects-show-more-btn');
+    const showLessbtn = document.querySelector('#projects-show-less-btn');
+    showProjects.style.height = 0;
+    showMorebtn.style.display = 'inline-block';
+    showLessbtn.style.display = 'none';
+});
+
+
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc413').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc413")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#footy').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-footy")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#sportsup').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-sportsup")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('#csc207').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var content = document.getElementById("modal-csc207")
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "block";
+    content.style.display = "flex";
+});
+
+$('.close').click(function(){
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // When the user clicks on the button, open the modal
+    modal.style.display = "none";
 })

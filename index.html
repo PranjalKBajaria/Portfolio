@@ -7,6 +7,9 @@
     <title>Pranjal Bajaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -24,8 +27,7 @@
         <div class="max-width">
             <!-- <div class="logo"><a href="#">   </a></div> -->
             <ul class="navigation">
-                <li><a href="#home" class="menu-btn">HOME</a></li>
-                <li><a href="#about" class="menu-btn">ABOUT ME</a></li>
+                <li><a href="#about" class="menu-btn">HOME</a></li>
                 <li><a href="#experience" class="menu-btn">EXPERIENCE</a></li>
                 <li><a href="#projects" class="menu-btn">PROJECTS</a></li>
                 <li><a href="#achievements" class="menu-btn">ACHIEVEMENTS</a></li>
@@ -68,7 +70,7 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            
             <div class="about-content">
                 <div class="column left">
                     <img src="my_pic.jpeg" alt="">
@@ -93,7 +95,7 @@
         </div>
     </section>
 
-    <div class="container exp-container">
+    <!-- <div class="container exp-container">
       <div class="row">
         <div class="section-heading col-12 col-lg-4 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
           <h1 class="mb-0">EXPERIENCE</h1>
@@ -262,59 +264,344 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
+    <section class="exper" style="background-color: rgb(236, 236, 236);">
+
+      <div class="container exp-container">
+        <div class="row">
+          <div class="section-heading col-12 col-lg-4 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">EXPERIENCE</h1>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="card exp course">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a style="display:block" href="https://www.ti.com/" target="_blank" rel="noopener">
+                      <img src="ti.png" style="height:56px" alt="Texas Instruments" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">
+                      Software Engineering Intern
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">
+                      <a href="https://www.ti.com/" target="_blank" rel="noopener">
+                        Texas Instruments, Toronto, Canada
+                      </a>
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">May 2023 – Aug 2023</div>
+                  </div>
+                </div>
+                <div class="card-text"> 
+                  <ul class="exp-bullets">
+                    <li>Worked in a team of 7 developers on Texas Instruments' Code Composer Studio Theia IDE features that enabled debugging logs and C language input/output for the company's microcontrollers.</li>
+                    <li>Wrote testing APIs and automated Playwright tests for the same IDE.</li>
+                  </ul> 
+                  <ul class="exp-stack">
+                    <li><p>Tech Used:  TypeScript,  C,  Playwright,  ElectronJS,  NodeJS </p></li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+  
+            <div class="card exp course">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a style="display:block" href="https://www.daisyintelligence.com/" target="_blank" rel="noopener">
+                      <img src="daisy2.png" style="height:56px" alt="Texas Instruments" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">
+                      Machine Learning Developer PEY
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">
+                      <a href="https://www.daisyintelligence.com/" target="_blank" rel="noopener">
+                        Daisy Intelligence Inc, Toronto, Canada
+                      </a>
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">May 2022 – May 2023</div>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <ul class="exp-bullets">
+                    <li>Worked on improving and optimising the data and machine learning pipeline for forecasting models in a team of 4 developers for
+                      retail clients like Walmart, Sedanos and Carrefour.</li>
+                    <li>Worked on designing time-series forecasting models for forecasting quantities and optimising sales for Daisy clients.</li>
+                  </ul> 
+                  <ul class="exp-stack">
+                    <li><p>Tech Used:  Python,  Pytorch,  Pandas,  Numpy,  SQl, Apache Spark, GCP and DB2</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card exp course">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a style="display:block" href="https://www.utoronto.ca/" target="_blank" rel="noopener">
+                      <img src="uoft.jpeg" style="height:56px" alt="Texas Instruments" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">
+                      Research Assistant
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">
+                      <a href="https://www.utoronto.ca/" target="_blank" rel="noopener">
+                        University of Toronto, Toronto, Canada
+                      </a>
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">Apr 2021 – Dec 2021</div>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <ul class="exp-bullets">
+                    <li>Worked on a dataset of 650+ million tweets and used various traditional ML models like Naive Bayes,
+                      SVMs, Decision Trees, Random Forests along with ensemble techniques like boosting and bagging to create 
+                      classifiers to detect stigma against asian communities(due to the COVID-19 pandemic) on Twitter.</li>
+                  </ul> 
+                  <ul class="exp-stack">
+                    <li><p>Tech Used:  Python,  Pytorch,  Pandas,  Numpy</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card exp course">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a style="display:block" href="https://www.utoronto.ca/" target="_blank" rel="noopener">
+                      <img src="uoft.jpeg" style="height:56px" alt="Texas Instruments" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">
+                      Project Lead Developer (UofT Student Engagement Awards)
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">
+                      <a href="https://www.utoronto.ca/" target="_blank" rel="noopener">
+                        University of Toronto, Toronto, Canada
+                      </a>
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">Jul 2021 – Oct 2021</div>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <ul class="exp-bullets">
+                    <li>Lead a project team of 7 students in working on a project that aimed to combat the spread of misinformation
+                      on twitter by identifying communities that are prone to misinformation using a fine tuned BERT based classifier</li>
+                  </ul> 
+                  <ul class="exp-stack">
+                    <li><p>Tech Used:  Python,  Pytorch,  Pandas,  Numpy, Selenium</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card exp course">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a style="display:block" href="https://ai-commons.org/" target="_blank" rel="noopener">
+                      <img src="aicommons.png" style="height:56px" alt="Texas Instruments" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">
+                      Instructor
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">
+                      <a href="https://ai-commons.org/" target="_blank" rel="noopener">
+                        AiCommons, Toronto, Canada
+                      </a>
+                    </div>
+                    <div class="card-subtitle my-0 article-metadata">Dec 2020 – Nov 2021</div>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <ul class="exp-bullets">
+                    <li>Helped in creating a curriculum in machine learning and taught it to over 200+ students from Kenya, Ghana,
+                      Nigeria, Algeria and Mexico in collaboration with AiCommons, McGill University, and UofT.</li>
+                  </ul> 
+                  <ul class="exp-stack">
+                    <li><p>Tech Used:  Python and  Pytorch</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
 
     <section class="container" id="projects">
 
       <div class="title">
-          Projects
+          PROJECTS
       </div>
-    
+  
       <div class="row projects-row">
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.558)),
-          url('conferencejava.png');">
-            <!-- <a href="#"><img class="card-img-top" src="conferencejava.png" alt=""></a> -->
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.558)),
-          url('nstcnn.png');">
+
+        <div class="col projects-col">
           <div class="project-card">
-            <div class="project-title">
-              <h3> Conference Management Client </h3>
+            <div id="recamovie" class="project-body" >
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Rec-A-Movie</b></h3>
+                  <p class="project-blurb">
+                    GPT-3.5 based movie recommendation webapp
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="project-blurb">
-              Final project for CSC207 @UofT
+          </div>
+        </div>
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="csc413" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Evaluating Sound Enhancing GANs</b></h3>
+                  <p class="project-blurb">
+                    Final project for CSC413 @ UofT
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-            <!-- <a href="#"><img class="card-img-top" src="nstcnn.png" alt=""></a> -->
+        </div>
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="csc207" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Conference Management Client</b></h3>
+                  <p class="project-blurb">
+                    Final project for CSC207 @ UofT
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.558)),
-          url('assemblygame.png');;">
-            <!-- <a href="#"><img class="card-img-top" src="assemblygame.png" alt=""></a> -->
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="sportsup" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>SportsUp</b></h3>
+                  <p class="project-blurb">
+                    A tinder like webapp to find people to play sports with
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd;">
-            <!-- <a href="#"><img class="card-img-top" src="moods.png" alt=""></a> -->
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="footy" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>footy.js</b></h3>
+                  <p class="project-blurb">
+                    Final project for CSC309 @ UofT
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd;">
-            <!-- <a href="#"><img class="card-img-top" src="knn.png" alt=""></a> -->
+
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="outlook" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Add-smart-date</b></h3>
+                  <p class="project-blurb">
+                    <b>GPT-3.5</b> based extension calender extension for Microsoft Outlook
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="card h-100" style="border: 2px solid #4a69bd;">
-            <!-- <a href="#"><img class="card-img-top" src="snake.png" alt=""></a> -->
-          </div>
-        </div>
+
       </div>
-    
+
+      <div id="projects-show-more" class="row projects-row hidden-projects">
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="nstcnn" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Music Frankenstein</b></h3>
+                  <p class="project-blurb">
+                    Neural style transfer for music 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="assemblygame" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>DoodleJump Assembly game</b></h3>
+                  <p class="project-blurb">
+                    Recreation of classic doodle jump in MIPS assembly
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col projects-col">
+          <div class="project-card">
+            <div id="moods" class="project-body">
+              <div class="project-overlay">
+                <div class="spacer"></div>
+                <div class="project-content">
+                  <h3><b>Moods Journal</b></h3>
+                  <p class="project-blurb">
+                    Android app that uses Sentiment Analysis to keep track of your moods
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button type="button" class="btn btn-secondary show-more-btn" id="projects-show-more-btn">Show More</button>
+      <button type="button" class="btn btn-secondary show-more-btn" id="projects-show-less-btn">Show Less</button>
     
   </section>
 <!-- 
@@ -418,32 +705,31 @@
           </div>
         </div>
       
-      
     </section> -->
 
     <section class="achievements" id="achievements">
         <div class="max-width">
-            <h2 class="title">Achievements and Certifications</h2>
+            <h1 class="title">Achievements and Certifications</h1>
             <div class="carousel owl-carousel">
                 <div class="card" >
                     <div class="box" style="height: 380px;">
-                        <img src="uoft.png" alt="">
+                        <img src="uoft_logo.png" alt="">
                         <div class="text">Dean's List Scholar</div>
                         <p>Awarded to Students who maintain excellent academic standing with a cGPA of over 3.5 during an academic term. I received this honor for academic sessions 2019-2020 and 2020-2021.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="uoft.png" alt="">
+                        <img src="uoft_logo.png" alt="">
                         <div class="text">UofT Student Engagement Award</div>
                         <p> The UofT Student Engagement Awards are awarded to student-led projects 
-                            that contribute to rebuilding healthy, resilient, and equitable 
-                            communities as part of our post-COVID recovery</p>
+                            that contribute to rebuilding healthy communities as part of our 
+                            post-COVID recovery</p>
                     </div>
                 </div>
                 <div class="card" onclick="location.href='https:/www.uc.utoronto.ca/scholarships-awards?residency_osap_criteria=55&year_of_study=All&programs_centres=All&application_requirements=All&enrolment=60&scholarship_award_type=All&page=9';" style="cursor: pointer;">
                     <div class="box" style="height: 380px;">
-                        <img src="uc.jpeg" alt="">
+                        <img src="uoft_logo.png" alt="">
                         <div class="text">Reuben Wells Leonard Scholarship</div>
                         <p>Awarded to one student in every year who maintain excellent academic standing
                             in Univeristy College, UofT.
@@ -452,7 +738,7 @@
                 </div>
                 <div class="card" onclick="location.href='https:/www.uc.utoronto.ca/scholarships-awards?programs_centres=All&application_requirements=53&scholarship_award_type=38&residency_osap_criteria=56&year_of_study=All&enrolment=All&page=1';" style="cursor: pointer;">
                     <div class="box" style="height: 380px;">
-                        <img src="uc.jpeg" alt="">
+                        <img src="uoft_logo.png" alt="">
                         <div class="text">Louis Rosenfeld Scholarship</div>
                         <p>Awarded to a student who maintains general proficiency with excellent ecademic 
                             standing throughout their undergrad in University College, UofT.</p>
@@ -463,7 +749,7 @@
                     <div class="box" style="height: 380px;">
                         <img src="coursera.svg" alt="">
                         <div class="text">Machine Learning</div>
-                        <p>Offered by Stanford University
+                        <p> A course in Machine Learning fundamentals (in GNU Octave) offered by Stanford University.
                         </p>
                     </div>
                 </div>
@@ -471,7 +757,7 @@
                     <div class="box" style="height: 380px;">
                         <img src="coursera.svg" alt="">
                         <div class="text">Data Analysis With Python</div>
-                        <p>Offered by IBM</p>
+                        <p>A Python Data Analysis course offered by IBM</p>
                     </div>
                 </div>
 
@@ -479,7 +765,7 @@
                     <div class="box" style="height: 380px;">
                         <img src="coursera.svg" alt="">
                         <div class="text">Databases and SQL for Data Science with Python</div>
-                        <p>Offered by IBM
+                        <p>A course covering database design fundamentals and SQL offered by IBM.
                         </p>
                     </div>
                 </div>
@@ -487,15 +773,7 @@
                     <div class="box" style="height: 380px;">
                         <img src="coursera.svg" alt="">
                         <div class="text">Python for Data Science, AI and Development</div>
-                        <p> Offered by IBM</p>
-                    </div>
-                </div>
-
-                <div class="card" onclick="location.href='https:/www.udemy.com/certificate/UC-AQKQYFAD/';" style="cursor: pointer;">
-                    <div class="box" style="height: 380px;">
-                        <img src="udemy.png" alt="">
-                        <div class="text"><br>Java Masterclass</div>
-                        <p></p>
+                        <p> A course that teaches about the Python data science libraries; numpy, pandas and matplotlib  offered by IBM</p>
                     </div>
                 </div>
                 
@@ -519,7 +797,7 @@
         </div>
         <div class="max-width" style="text-align: center;">
             <p>
-                Copyright &copy; 2021 Pranjal Kumar Bajaria.
+                Copyright &copy; 2023 Pranjal Kumar Bajaria.
             </p>
         </div>
     </footer>
@@ -527,33 +805,216 @@
 
     <!-- MODALS FOR PROJECTS -->
 
-    <div class="modal-body">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-          <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            <div class="row">
-              <div class="col-8 col-sm-6">
-                Level 2: .col-8 .col-sm-6
+    <div class="modal-overlay">
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="modal-csc207" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Conference Management Client</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This is a <b>Java Swing</b> based desktop application that allows users to create and manage conferences. The application worked like a LinkedIn for 
+              conferences and users are able to browse conferences, look at various events within the conference, connect with other people in the same events and 
+              chat with connections. <br><br>
+              The application was built using <b>SOLID principles</b> and various design patterns like <b>dependency inverstion, factory design pattern</b> etc. <br><br> 
+              The project was completed in a team of <b>7 developers</b> as the final project for the software design course(CSC207) at UofT.</p>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> Java, Java Swing</p>
               </div>
-              <div class="col-4 col-sm-6">
-                Level 2: .col-4 .col-sm-6
-              </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+            <button type="button" class="btn btn-light">Demo</button>
           </div>
         </div>
+
+        <div id="modal-csc413" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Sound Enhancing General Adversarial Networks</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>A research project where we modified the architecture of <b>Speech Enhancement GANs (SEGANs)</b> and evaluated their performance in the task of sound 
+              enhancement on different datasets. <br><br>
+              We experimented with the Wasserstein loss metric and the 'Departure from Normality' metric (a Schur decomposition based similarity metric for LSGANs) and 
+              found some interesting results which were summarised in a paper. <br><br>
+              The project was completed in a team of <b>3 students</b> as the final project for the deep learning course(CSC413) at UofT.</p>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> Pytorch, Python, Tensorflow, Latex</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">Paper</button>
+          </div>
+        </div>
+        
+        <div id="modal-outlook" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Smart add date to Outlook</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>A common issue I had with outlook was that I would miss events because the sender did not include a calender invite to the invite and just accepting
+              the event did not automatically add it to my outlook calender. I got tired of it and tried to look for solutions in an extension but I could not find an extension
+              that could scan emails for events and prompt me to add them separately. <br><br>
+              I found out that Microsoft has outlook dev tools that allow devs to create their own extensions so, along with my friend, I decided to build my own extension.
+              We used <b>Open AI's GPT-3.5</b> to parse emails and identify events in outlook emails and the outlook dev tools to add the events to the user's calender.
+              This was a fun project that we use ourselves to improve our productivity. <br><br>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> TypeScript, Edge DevTools, OpenAI APIs</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+          </div>
+        </div>
+
+
+        <div id="modal-footy" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">footy.js</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This is a <b>JavaScript library</b> for visualisations related to the game of football(or soccer) and fantasy football. It allows users to visualise players on the pitch,
+              make gameplay animations, compare team strengths in FIFA and compare different players' in game attributes in FIFA. <br><br>
+              The library was developed using <b>vanilla JS</b> and was deployed with documentation on Heroku. The backend for the host website was build using NodeJS.<br><br>
+              The project was completed in as the final project for the web development course(CSC309) at UofT.</p>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> JavaScript, HTML, CSS, NodeJS</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+          </div>
+        </div>
+
+
+        <div id="modal-sportsup" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">SportsUp</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This is a tinder like web app that allows users to find people to play sports with and connect with them. It also allows users to create 
+              and manage sports tournaments. The app was built using HTML and CSS for the frontend, NodeJS for the backend and Mongoose for the database. <br><br> 
+              The project was completed in a team of <b>5 developers</b> as the final project for the web development course(CSC309) at UofT.</p>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> JavaScript, HTML, CSS, Mongoose, REST APIs, NodeJS</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+          </div>
+        </div>
+
+        <div id="modal-nstcnn" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Music Frankenstein</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>I was interested in Neural Style Transfer and thought that it would be interesting to see if we can extend it to audio 
+              samples as well. So I proposed to lead a UTMIST (University of Toronto Machine Intelligence Student Team) project to explore the 
+              same.<br><br>
+              We followed a paper that used <b>CNNs</b> on the gram matrices of the spectrograms of audio samples to convert the "style" of 
+              a content audio into the the style of a target style audio. The results were hard to interpret but we learned a lot both about 
+              audio files and CNNs from this project and presented our results in the year-end showcase. <br><br>
+              The project was completed in a team of <b>5 developers</b> as the UTMIST ML project for 2021.</p>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> Python, Pytorch, Tensorflow, Jupyter</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+            <button type="button" class="btn btn-light">Demo</button>
+          </div>
+        </div>
+
+        <!-- Modal content -->
+        <div id="modal-recamovie" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Conference Management Client</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>After constantly getting my food cold before deciding to watch something on netflix on a weekend, I was tired and decided 
+              to create this app. <br><br>
+              This is a webapp that uses GPT-3.5 to provide movie recommendations based on prompts. So you can ask it to recommend you 
+              "a critically acclaimed horror movie that I can watch in 1 and a half hours" and it will give you three recommendations with their
+              names, release date, imdB score and a short summary to help you decide between these movies. <br><br>
+              I used OpenAI API for the "recommendation engine" and JS and NodeJS for the webapp. An interesting part of this project was just figuring
+              out how to extract the movie data from imdB using cheerio ( because imdB no longer allows access to their APIs :( ).
+
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> JavaScript, NodeJS, OpenAi API, Cheerio</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+          </div>
+        </div>
+
+        <div id="modal-assemblygame" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">DoodleJump Assembly Game</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>I re-created the classic doodlejump game in MIPS Assembly. This project, while sometimes frustrating, was a very good learning 
+              experience and gave me a lot of respect for low level languages.<br><br>
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> Assembly </p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">GitHub</button>
+          </div>
+        </div>
+
+        <div id="modal-moods" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Moods journal app</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Moods is a Journal app that uses sentiment analysis to detect mood levels of the
+              user and makes it easier for them to keep track of their mental health. The app also 
+              displays useful statistics that help users identify what factors affected their mental
+              health the most over time (positively and negatively). The front end was implemented 
+              using flutter and the backend was implemented using Python Flask.<br><br>
+              This project was comleted in a team of <b>4 developers</b> for UofT Hacks 2021. 
+              <div class="modal-techstack">
+                <p><b>Tech Used:</b> Python, Flask, NLTK, HuggingFace</p>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light">Devpost</button>
+          </div>
+        </div>
+
       </div>
+  
     </div>
 
     <script src="script.js"></script>

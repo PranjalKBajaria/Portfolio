@@ -17,18 +17,19 @@
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 700;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 section .title::before{
     content: "";
     position: absolute;
     bottom: -20px;
-    color: #4a69bd;
-    background: #4a69bd;
+    color: #171717;
+    background: #171717;
     left: 50%;
     width: 180px;
     height: 3px;
@@ -40,8 +41,8 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #4a69bd;
-    background: #4a69bd;
+    color: #171717;
+    background: #171717;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -62,7 +63,7 @@ section .title::after{
 
 .navbarz.sticky{
     padding: 15px 0;
-    background: #4a69bd;
+    background: #171717;
 }
 
 .max-width{
@@ -75,7 +76,7 @@ section .title::after{
 .navbarz .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbarz .logo a{
@@ -95,7 +96,7 @@ section .title::after{
 
 .navbarz .navigation li a{
     text-decoration: none;
-    color: rgb(200, 200, 200);
+    color: rgb(185, 184, 184);
     font-size: 18px;
     font-weight: 700;
     margin-left: 30px;
@@ -145,7 +146,7 @@ section .title::after{
 
 .home{
     display: flex;
-    background: linear-gradient(45deg,#7dd0f6, #4a69bd);
+    background: linear-gradient(45deg,#7dd0f6, #171717);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -258,7 +259,6 @@ section{
 
 .about{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(236, 236, 236);
 }
 
 .about .title{
@@ -277,16 +277,16 @@ section{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #4a69bd;
+    background: #171717;
     transform: translateX( -50%);
 }
 
 .about .about-content .left img{
-    margin-top: 30px;
+    margin-top: 40px;
     height: 100%;
     width: 95%;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .about .about-content{
@@ -323,6 +323,13 @@ section{
 .exp-container {
     padding-top: 6rem;
     padding-bottom: 6rem;
+}
+
+.exp-container h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 .exp-container .card-title{
@@ -455,18 +462,19 @@ section{
 /* *************************************** */
 
 .experience, .achievements{
-    color:#fff;
-    background: #111;
+    background-color: rgb(225, 223, 223);
 }
 .experience .title::before,
 .achievements .title::before,
 .container .title::before{
-    background: #4a69bd;
+    background: #171717;
 }
 
 .max-width .title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 
@@ -474,7 +482,7 @@ section{
 /* *************************************** */
 
 .achievements .carousel .card{
-    background: #222;
+    background: #ffffff;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -482,7 +490,6 @@ section{
     transition: all 0.3s ease;
 }
 .achievements .carousel .card:hover{
-    background: #4a69bd;
 }
 .achievements .carousel .card .box{
     display: flex;
@@ -504,7 +511,7 @@ section{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #4a69bd;
+    border: 5px solid #171717;
     transition: all 0.3s ease;
 }
 .achievements .carousel .card:hover img{
@@ -529,7 +536,7 @@ section{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #4a69bd!important;
+    background: #171717!important;
 }
 
 .container .row{
@@ -548,7 +555,7 @@ section{
 }
 
 footer{
-    background-color: #4a69bd;
+    background-color: #171717;
     height: 200px;
 }
 
@@ -596,7 +603,9 @@ footer .max-width p{
     font-size: 1em;
 }
 
-
+#projects {
+    text-align: center;
+}
 
 .projects-row .card {
     position: relative;
@@ -610,11 +619,195 @@ footer .max-width p{
 	padding-top: 100%; 	
 }
 
+#csc413:before{
+    background-image: url('csc413.png');
+}
+
+#csc207:before{
+    background-image: url('conferencejava.png');
+}
+
+#sportsup:before{
+    background-image: url('sportsup.png');
+}
+
+#footy:before{
+    background-image: url('footy.png');
+}
+
+#moods:before{
+    background-image: url('moods.png');
+}
+
+#outlook:before{
+    background-image: url('outlook.png');
+}
+
+#assemblygame:before{
+    background-image: url('assemblygame.png');
+}
+
+#nstcnn:before{
+    background-image: url('nstcnn.png');
+    padding: 50px;
+}
+
+#recamovie:before{
+    background-image: url('csc413.png');
+    padding: 50px;
+}
+
+.projects-col {
+    height: 400px;
+    min-width: 350px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.project-card {
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.project-body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-body:before {
+    transition: all .3s;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-body:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.project-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+.spacer {
+    height: 40%;
+}
+
+.project-content {
+    margin-right: 10%;
+    margin-left: 10%;;
+}
+
+.project-blurb {
+    margin-top: 30px;
+}
+
+
+#projects-show-more-btn{
+    display: inline-block;
+    width: 30%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects-show-less-btn{
+    display: none;
+    width: 30%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects-show-more {
+    transition: height 10s!important;
+    overflow: hidden;
+    height: 0;
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: none;
+    width: 50%!important;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    min-width: 350px!important;
+  }
+
+  .modal-footer {
+    justify-content: center!important;
+    padding-bottom: 0!important;
+    border-top: 0!important;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-techstack {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    }
+  
+
 /* Responsive queries */
 
-@media(max-width: 1285px){
+@media(max-width: 1120px){
     .max-width{
         padding: 0 30px;
+    }
+
+    ul {
+        padding-left: 0!important;
     }
 
     .menu-btn{
@@ -622,7 +815,6 @@ footer .max-width p{
         z-index: 999;
     }
     #projects .row{
-        padding: 0 30px;
     }
 
     .menu-btn i.active::before{
@@ -635,7 +827,7 @@ footer .max-width p{
         width: 100%;
         left: -100%; 
         top: 0;
-        background: #4a69bd;
+        background: #171717;
         text-align: center;
         margin: 0 0;
         padding-top: 80px;
@@ -652,7 +844,7 @@ footer .max-width p{
 
     .navbarz .navigation li a{
         display: inline-block;
-        margin: 20px 0;
+        margin-top: 40px;
         font-size: 18px;
     }
 
