@@ -628,40 +628,40 @@ footer .max-width p{
 }
 
 #csc413:before{
-    background-image: url('csc413.png');
+    background-image: url('images/csc413.png');
 }
 
 #csc207:before{
-    background-image: url('conferencejava.png');
+    background-image: url('images/conferencejava.png');
 }
 
 #sportsup:before{
-    background-image: url('sportsup.png');
+    background-image: url('images/sportsup.png');
 }
 
 #footy:before{
-    background-image: url('footy.png');
+    background-image: url('images/footy.png');
 }
 
 #moods:before{
-    background-image: url('moods.png');
+    background-image: url('images/moods.png');
 }
 
 #outlook:before{
-    background-image: url('outlook.png');
+    background-image: url('images/outlook.png');
 }
 
 #assemblygame:before{
-    background-image: url('assemblygame.png');
+    background-image: url('images/assemblygame.png');
 }
 
 #nstcnn:before{
-    background-image: url('nstcnn.png');
+    background-image: url('images/nstcnn.png');
     padding: 50px;
 }
 
 #recamovie:before{
-    background-image: url('recamovie.png');
+    background-image: url('images/recamovie.png');
     padding: 50px;
 }
 
